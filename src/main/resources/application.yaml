@@ -1,0 +1,18 @@
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          link-shortener-client:
+            connect-timeout: 1000
+            read-timeout: 1000
+
+mentoring:
+  integration:
+    link-shortener:
+      host: http://localhost:8082
+
+logging:
+  web-logging:
+    log-feign-requests: true
